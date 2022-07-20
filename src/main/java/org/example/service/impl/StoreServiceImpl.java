@@ -57,15 +57,16 @@ public class StoreServiceImpl {
         }
     }
 
-    public void fifoSell(Queue<User> listQueue, User cashier) {
+    public boolean fifoSell(Queue<User> listQueue, User cashier) {
        if(!listQueue.isEmpty()){
            if (cashier.getRole().equals(Roles.Cashier)){
                for (int i = 0; i <= listQueue.size()+3 ; i++){
-           User user1 = listQueue.remove();
-           sellProduct(cashier, user1);
+                   User user1 = listQueue.remove();
+                   sellProduct(cashier, user1);
                }
            }
        }
+        return false;
     }
     public String prioritySellQue(PriorityQueue<User> listQueue, User cashier) {
         String message = "";
@@ -74,7 +75,10 @@ public class StoreServiceImpl {
                 User user1 = listQueue.remove();
                 message = user1.getName()+" sold";
                 sellProduct(cashier, user1);
+                message = "sold";
             }
+        }else {
+            message = "Not A cashier";
         }
         return message;
     }

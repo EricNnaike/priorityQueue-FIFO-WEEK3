@@ -14,7 +14,6 @@ import java.util.Comparator;
 @Setter
 public class User {
     private String name;
-    private int qty;
     private Roles role;
     private Wallet wallet;
     private Cart cart;
@@ -44,7 +43,6 @@ public class User {
         return transact;
     }
 
-
     public void loadWallet(double amount) {
         wallet.setAmount(amount);
     }
@@ -53,26 +51,10 @@ public class User {
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
-                ", qty=" + qty +
                 ", role=" + role +
                 ", wallet=" + wallet +
                 ", cart=" + cart +
                 '}';
     }
-
-
-//    @Override
-//    public int compare(User a, User b) {
-//        int aTotal = a.getCart().getTotalQtyOfProductInCart();
-//        int bTotal = b.getCart().getTotalQtyOfProductInCart();
-//        if ( aTotal == bTotal){
-//            return 0;
-//        }else if (aTotal < bTotal){
-//            return 1;
-//        }
-//        return -1;
-//    }
-
-
 
 }

@@ -30,6 +30,10 @@ public class QueueClass {
         QueueClass.queue = queue;
     }
 
+    public void setPriorityQue(Queue<User> priorityQue) {
+        QueueClass.priorityQue = priorityQue;
+    }
+
     public void addToQueue(User user) {
         if (user.getRole().equals(Roles.Customer)) {
             queue.add(user);
