@@ -39,6 +39,9 @@ public class User {
         this.assessmentScore = assessmentScore;
     }
 
+    public User(String john, Roles customer, int i) {
+    }
+
     public CashierTransactionsImpl getTransact() {
         return transact;
     }

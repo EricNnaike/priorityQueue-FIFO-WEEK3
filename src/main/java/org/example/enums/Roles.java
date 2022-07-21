@@ -4,5 +4,5 @@ public enum Roles {
     Manager,
     Cashier,
     Customer,
-    Applicant
+    CUSTOMER, Applicant
 }
