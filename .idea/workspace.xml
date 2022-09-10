@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e88bdb33-5b40-4554-9250-a171be527fea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/enums/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/enums/Roles.java" afterDir="false" />
-    </list>
+    <list default="true" id="e88bdb33-5b40-4554-9250-a171be527fea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +39,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/mac/IdeaProjects/Week_3_task/pom.xml",
+    "last_opened_file_path": "/Users/mac/IdeaProjects/Week_3_task",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -70,7 +66,7 @@
       <recent name="org.example.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StoreServiceImplTest.fifoSellWhenCashierIsNotCashierThenNotSellProduct">
+  <component name="RunManager" selected="JUnit.StoreServiceImplTest.sellProductWhenCustomerHasEnoughMoneyThenReturnTrue">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Week_3_task" />
@@ -84,23 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CashierTransactionsImplTest.printReceiptShouldPrintTheReceiptForTheCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Week_3_task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="org.example.service.impl.CashierTransactionsImplTest" />
-      <option name="METHOD_NAME" value="printReceiptShouldPrintTheReceiptForTheCustomer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueueClassTest.addToQueueWhenUserIsCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CartTest.addToMyCartWhenProductIsNotInTheCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Week_3_task" />
       <extension name="coverage">
         <pattern>
@@ -109,24 +89,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.entities" />
-      <option name="MAIN_CLASS_NAME" value="org.example.entities.QueueClassTest" />
-      <option name="METHOD_NAME" value="addToQueueWhenUserIsCustomer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueueClassTest.addToQueueWhenUserIsNotCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Week_3_task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.entities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.entities" />
-      <option name="MAIN_CLASS_NAME" value="org.example.entities.QueueClassTest" />
-      <option name="METHOD_NAME" value="addToQueueWhenUserIsNotCustomer" />
+      <option name="MAIN_CLASS_NAME" value="org.example.entities.CartTest" />
+      <option name="METHOD_NAME" value="addToMyCartWhenProductIsNotInTheCart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,13 +112,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StoreServiceImplTest.prioritySellQueWhenCashierIsInTheQueueThenReturnMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Week_3_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.impl.StoreServiceImplTest" />
+      <option name="METHOD_NAME" value="prioritySellQueWhenCashierIsInTheQueueThenReturnMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreServiceImplTest.sellProductWhenCustomerHasEnoughMoneyThenReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Week_3_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.impl.StoreServiceImplTest" />
+      <option name="METHOD_NAME" value="sellProductWhenCustomerHasEnoughMoneyThenReturnTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StoreServiceImplTest.fifoSellWhenCashierIsNotCashierThenNotSellProduct" />
-        <item itemvalue="JUnit.CashierTransactionsImplTest.printReceiptShouldPrintTheReceiptForTheCustomer" />
-        <item itemvalue="JUnit.QueueClassTest.addToQueueWhenUserIsNotCustomer" />
-        <item itemvalue="JUnit.QueueClassTest.addToQueueWhenUserIsCustomer" />
+        <item itemvalue="JUnit.StoreServiceImplTest.sellProductWhenCustomerHasEnoughMoneyThenReturnTrue" />
+        <item itemvalue="JUnit.StoreServiceImplTest.prioritySellQueWhenCashierIsInTheQueueThenReturnMessage" />
+        <item itemvalue="JUnit.CartTest.addToMyCartWhenProductIsNotInTheCart" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StoreServiceImplTest.fifoSellWhenCashierIsNotCashierThenNotSellProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +202,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>44</line>
+          <line>46</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

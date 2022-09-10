@@ -4,6 +4,7 @@ package org.example;
 import org.example.entities.*;
 import org.example.enums.Roles;
 import org.example.service.impl.CashierTransactionsImpl;
+import org.example.service.impl.CustomerTransactionImpl;
 import org.example.service.impl.StoreServiceImpl;
 
 import java.io.IOException;
@@ -42,6 +43,7 @@ public class Main {
         fifoQueue.add(Ebuka);
         fifoQueue.add(Amanda);
         fifoQueue.add(Femi);
+        System.out.println(queueCon.getQueue().size());
         // SELLING TO CUSTOMER BASE ON FIFO
         System.out.println("SELLING TO CUSTOMER BASE ON FIFO");
         System.out.println("****************************************************");
@@ -58,11 +60,15 @@ public class Main {
         priority.add(Tobi);
         priority.add(Femi);
         priority.add(Amanda);
+        System.out.println(queueCon.getPriorityQue().size());
         // SELLING TO CUSTOMER BASE ON QUANTITY OF PRODUCTS
         System.out.println("SELLING TO CUSTOMER BASE ON QUANTITY OF PRODUCTS");
         System.out.println("****************************************************");
         System.out.println(ssi.prioritySellQue((PriorityQueue<User>) priority, cashier));
 
+        //SEARCH PRODUCT BY CATEGORY
+        CustomerTransactionImpl transact = new CustomerTransactionImpl();
+        transact.searchCategory("Cookies");
     }
 
 }
